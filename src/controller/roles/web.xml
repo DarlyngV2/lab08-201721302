@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">
+	<servlet>
+		<servlet-name>IndexControllerRo</servlet-name>
+		<servlet-class>controller.roles.IndexControllerRo</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>IndexControllerRo</servlet-name>
+		<url-pattern>/roles</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>AddControllerRo</servlet-name>
+		<servlet-class>controller.roles.AddControllerRo</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddControllerRo</servlet-name>
+		<url-pattern>/roles/add</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>ViewControllerRo</servlet-name>
+		<servlet-class>controller.roles.ViewControllerRo</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ViewControllerRo</servlet-name>
+		<url-pattern>/roles/view</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>EditControllerRo</servlet-name>
+		<servlet-class>controller.roles.EditControllerRo</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditControllerRo</servlet-name>
+		<url-pattern>/roles/edit</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>DeleteControllerRo</servlet-name>
+		<servlet-class>controller.roles.DeleteControllerRo</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteControllerRo</servlet-name>
+		<url-pattern>/roles/delete</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>
